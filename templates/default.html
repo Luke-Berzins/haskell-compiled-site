@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>$title$ | Episteme</title>
+        <style>
+            /* Base Typography */
+            :root {
+                --text-color: #1a1a1a;
+                --bg-color: #ffffff;
+                --accent-color: #444444;
+                --max-width: 800px;
+            }
+
+            body {
+                font-family: "Equity Text A", "Times New Roman", Times, serif;
+                line-height: 1.6;
+                color: var(--text-color);
+                background: var(--bg-color);
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Navigation */
+            nav {
+                background: var(--bg-color);
+                border-bottom: 1px solid #eee;
+                padding: 1rem 0;
+                margin-bottom: 2rem;
+            }
+
+            .nav-container {
+                max-width: var(--max-width);
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 1rem;
+            }
+
+            .site-title {
+                font-size: 1.5rem;
+                font-weight: normal;
+                margin: 0;
+                font-variant: small-caps;
+            }
+
+            nav a {
+                color: var(--text-color);
+                text-decoration: none;
+            }
+
+            /* Content */
+            main {
+                max-width: var(--max-width);
+                margin: 0 auto;
+                padding: 0 1rem;
+            }
+
+            /* Metadata Block */
+            .metadata {
+                margin-bottom: 2rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #eee;
+            }
+
+            .meta-block {
+                font-size: 0.9rem;
+                color: var(--accent-color);
+            }
+
+            .meta-block span {
+                margin-right: 1rem;
+            }
+
+            /* Abstract */
+            .abstract {
+                font-style: italic;
+                margin: 2rem 0;
+                padding: 1rem;
+                background: #f9f9f9;
+                border-left: 3px solid var(--accent-color);
+            }
+
+            /* Details/Summary */
+            details {
+                margin: 1rem 0;
+                padding: 1rem;
+                background: #f9f9f9;
+            }
+
+            summary {
+                cursor: pointer;
+                color: var(--accent-color);
+            }
+
+            /* Typography Refinements */
+            h1, h2, h3 {
+                line-height: 1.2;
+            }
+
+            a {
+                color: #2c5282;
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+            }
+
+            a:hover {
+                border-bottom-color: currentColor;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <h1 class="site-title"><a href="/">Episteme</a></h1>
+                <div class="nav-links">
+                    <a href="/about">About</a>
+                    <a href="/archive">Archive</a>
+                    <a href="/tags">Tags</a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            $body$
+        </main>
+    </body>
+</html>

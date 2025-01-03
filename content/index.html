@@ -1,0 +1,10 @@
+---
+title: My Blog
+---
+<h1>My Posts</h1>
+$for(posts)$
+    <article>
+        <h2><a href="$url$">$title$</a></h2>
+        <div class="info">Posted on $date$</div>
+    </article>
+$endfor$

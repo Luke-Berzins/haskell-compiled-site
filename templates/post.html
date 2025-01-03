@@ -1,0 +1,24 @@
+<article>
+    <header class="metadata">
+        <h1>$title$</h1>
+        <div class="meta-block">
+            $if(status)$
+            <span class="status">Status: $status$</span>
+            $endif$
+            $if(importance)$
+            <span class="importance">Importance: $importance$</span>
+            $endif$
+            <span class="date">Created: $date$</span>
+        </div>
+    </header>
+
+    $if(abstract)$
+    <div class="abstract">
+        $abstract$
+    </div>
+    $endif$
+
+    <div class="content">
+        $body$
+    </div>
+</article>

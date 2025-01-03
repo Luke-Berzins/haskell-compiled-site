@@ -1,0 +1,15 @@
+<h1>Tags</h1>
+
+<div class="tag-list" style="display: flex; flex-direction: column; gap: 8px;">
+    $for(tags)$
+        <div style="display: flex; gap: 12px;">
+            <div style="width: 200px;">  <!-- Fixed width container for tag name -->
+                <a href="$url$">$tag$</a>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <div style="height: 20px; background-color: #007bff; min-width: calc($count$ * 20px);"></div>
+                <span style="min-width: 40px;">($count$)</span>
+            </div>
+        </div>
+    $endfor$
+</div>
